@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SL Móveis — Móveis sob medida</title>
+  <meta name="description" content="SL Móveis: sofás, mesas, guarda-roupas e planejados sob medida. Veja o cardápio de móveis e peça seu orçamento pelo WhatsApp." />
+  <meta name="theme-color" content="#b45309" />
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="is-loading">
+
+  <!-- ============ LOADING PAGE ============ -->
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <img src="assets/logo/logo.svg" alt="SL Móveis" class="loader-logo" />
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-text">Preparando seu ambiente…</p>
+    </div>
+  </div>
+
+  <!-- SEGURANÇA: se o JS externo falhar ou demorar, esconde o loader em 1,5s -->
+  <script>
+    (function () {
+      var t = setTimeout(function () {
+        document.body.classList.remove("is-loading");
+        document.body.classList.add("is-loaded");
+      }, 1500);
+      window.addEventListener("load", function () { clearTimeout(t); });
+    })();
+  </script>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="brand" aria-label="SL Móveis — início">
+        <img src="assets/logo/logo.svg" alt="SL Móveis" />
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="btn btn-primary header-cta"
+         data-wa="Olá! Vim pelo site da SL Móveis e gostaria de um orçamento."
+         href="#">Orçamento</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-inner">
+        <span class="eyebrow">Móveis sob medida • Entrega e montagem</span>
+
+        <h1>Móveis que combinam<br />com a sua casa.</h1>
+
+        <p class="hero-text">
+          Sofás, mesas, guarda-roupas e planejados feitos do jeito que você precisa.
+          Escolha no cardápio e peça seu orçamento direto no WhatsApp.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cardapio" class="btn btn-primary">Ver cardápio de móveis</a>
+          <a class="btn btn-ghost"
+             data-wa="Olá! Vim pelo site da SL Móveis e gostaria de um orçamento."
+             href="#">
+            <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 3C8.85 3 3.03 8.82 3.03 16c0 2.29.6 4.52 1.73 6.49L3 29l6.67-1.73A12.9 12.9 0 0 0 16.02 29C23.2 29 29 23.18 29 16S23.2 3 16.02 3Zm0 23.6a10.7 10.7 0 0 1-5.44-1.49l-.39-.23-4.05 1.06 1.08-3.95-.25-.4A10.65 10.65 0 0 1 5.33 16c0-5.9 4.8-10.7 10.7-10.7 5.9 0 10.7 4.8 10.7 10.7s-4.8 10.6-10.7 10.6Zm5.88-8.02c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.83 1.05-1.02 1.27-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.08 1.3 3.29c.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <ul class="hero-trust">
+          <li>Orçamento grátis</li>
+          <li>Garantia de 5 anos</li>
+          <li>Entrega e montagem</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CARDÁPIO ============ -->
+    <section class="section" id="cardapio">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cardápio</span>
+          <h2>Escolha o seu móvel</h2>
+          <p>
+            Preços a partir de, com medidas padrão. Todos os itens podem ser
+            feitos sob medida — é só pedir o orçamento.
+          </p>
+        </div>
+
+        <div class="grid">
+
+          <!-- 1 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Sala</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/sofa-aurora.jpg" alt="Sofá Aurora, 3 lugares, tecido linho" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Sofá Aurora</h3>
+              <p class="card-desc">3 lugares, tecido linho e pés em madeira maciça.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 2.490</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse no Sofá Aurora (a partir de R$ 2.490). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Sala de jantar</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/mesa-nordica.jpg" alt="Mesa de jantar nórdica com 6 lugares" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Mesa de Jantar Nórdica</h3>
+              <p class="card-desc">6 lugares, tampo em madeira e base metálica.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 1.890</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse na Mesa de Jantar Nórdica (a partir de R$ 1.890). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Quarto</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/guarda-roupa.jpg" alt="Guarda-roupa planejado com portas de correr" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Guarda-Roupa Planejado</h3>
+              <p class="card-desc">Sob medida, com portas de correr e espelho.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 3.200</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse no Guarda-Roupa Planejado (a partir de R$ 3.200). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Sala</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/poltrona-vera.jpg" alt="Poltrona Vera com estrutura em madeira" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Poltrona Vera</h3>
+              <p class="card-desc">Estrutura em madeira e assento estofado.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 890</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse na Poltrona Vera (a partir de R$ 890). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Sala</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/rack-linha.jpg" alt="Rack Linha, painel suspenso com nichos" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Rack Linha</h3>
+              <p class="card-desc">Painel suspenso com nichos e iluminação LED.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 1.150</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse no Rack Linha (a partir de R$ 1.150). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Quarto</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/cama-box.jpg" alt="Cama box baú casal com cabeceira estofada" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cama Box Baú</h3>
+              <p class="card-desc">Casal, com baú e cabeceira estofada.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 1.690</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse na Cama Box Baú (a partir de R$ 1.690). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Escritório</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/home-office.jpg" alt="Home office compacto com mesa e estante" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Home Office Compacto</h3>
+              <p class="card-desc">Mesa + estante em módulo único.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 2.100</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse no Home Office Compacto (a partir de R$ 2.100). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <span class="card-tag">Sala</span>
+              <svg class="card-ph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="10" rx="2"/><path d="M3 12h18M7 7V5M17 7V5M6 17v3M18 17v3"/>
+              </svg>
+              <img src="assets/moveis/aparador-teca.jpg" alt="Aparador Teca em madeira maciça com três gavetas" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Aparador Teca</h3>
+              <p class="card-desc">Madeira maciça com 3 gavetas.</p>
+              <div class="card-foot">
+                <div class="card-price"><small>a partir de</small>R$ 1.290</div>
+                <a class="card-btn" href="#" data-wa="Olá! Tenho interesse no Aparador Teca (a partir de R$ 1.290). Pode me passar mais informações?">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="menu-note reveal">
+          <p>Não encontrou o que procura? A gente faz sob medida.</p>
+          <a class="btn btn-primary"
+             data-wa="Olá! Não encontrei o móvel que procuro no cardápio. Podemos falar sobre um projeto sob medida?"
+             href="#">Pedir um orçamento personalizado</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="site-footer" id="contato">
+    <div class="wrap footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/logo/logo-branco.svg" alt="SL Móveis" />
+        <p>Móveis sob medida feitos com cuidado, do projeto à montagem.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a data-wa="Olá! Vim pelo site da SL Móveis." href="#">(11) 99999-9999</a></li>
+          <li><a href="mailto:contato@slmoveis.com.br">contato@slmoveis.com.br</a></li>
+          <li>Rua das Madeiras, 120 — São Paulo/SP</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horário</h4>
+        <ul>
+          <li>Seg a Sex — 8h às 18h</li>
+          <li>Sábado — 8h às 13h</li>
+          <li>Domingo — fechado</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="wrap footer-bottom">
+      <p>© <span id="ano">2026</span> SL Móveis. Todos os direitos reservados.</p>
+      <p>Móveis sob medida • CNPJ 00.000.000/0001-00</p>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÃO FLUTUANTE DO WHATSAPP ============ -->
+  <a class="wa-float"
+     href="#"
+     data-wa="Olá! Vim pelo site da SL Móveis e gostaria de um orçamento."
+     aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 3C8.85 3 3.03 8.82 3.03 16c0 2.29.6 4.52 1.73 6.49L3 29l6.67-1.73A12.9 12.9 0 0 0 16.02 29C23.2 29 29 23.18 29 16S23.2 3 16.02 3Zm0 23.6a10.7 10.7 0 0 1-5.44-1.49l-.39-.23-4.05 1.06 1.08-3.95-.25-.4A10.65 10.65 0 0 1 5.33 16c0-5.9 4.8-10.7 10.7-10.7 5.9 0 10.7 4.8 10.7 10.7s-4.8 10.6-10.7 10.6Zm5.88-8.02c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.83 1.05-1.02 1.27-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.08 1.3 3.29c.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37Z"/></svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
